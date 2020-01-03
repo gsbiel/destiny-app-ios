@@ -18,6 +18,10 @@ struct StoryBrain {
         return stories[currentStory].title
     }
     
+    func getCurrentChoice(_ choice : Int) -> String {
+        return stories[currentStory].getChoiceText(choice)
+    }
+    
     mutating func nextStory(_ choiceNumber : Int){
         currentStory = stories[currentStory].getDestination(choiceNumber)
     }
@@ -25,6 +29,7 @@ struct StoryBrain {
     mutating func addStory(_ story : [Story]){
         stories = story
     }
+    
     
 }
 

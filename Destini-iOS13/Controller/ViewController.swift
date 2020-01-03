@@ -52,23 +52,24 @@ class ViewController: UIViewController {
         ]
         
         storyBrain.addStory(stories)
-        updateCurrentScene()
+        updateUI()
 
     }
     
-    
-    
     @IBAction func onChoice1Handler(_ sender: UIButton) {
-        
+        storyBrain.nextStory(1)
+        updateUI()
     }
-    
     
     @IBAction func onChoice2Handler(_ sender: UIButton) {
-        
+        storyBrain.nextStory(2)
+        updateUI()
     }
     
-    func updateCurrentScene() {
+    func updateUI() {
         storyLabel.text = storyBrain.getCurrentStory()
+        choice1Button.setTitle(storyBrain.getCurrentChoice(1), for: .normal)
+        choice2Button.setTitle(storyBrain.getCurrentChoice(2), for: .normal)
     }
 
 

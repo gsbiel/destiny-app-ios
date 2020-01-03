@@ -50,7 +50,6 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucU-57-kzp"/>
                                             <action selector="onChoice1Handler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PsM-RG-S7a"/>
                                         </connections>
                                     </button>
@@ -70,7 +69,6 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQJ-CT-ECJ"/>
                                             <action selector="onChoice2Handler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZZ-0Y-A09"/>
                                         </connections>
                                     </button>
@@ -94,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="46"/>
+            <point key="canvasLocation" x="-988" y="-92"/>
         </scene>
     </scenes>
     <resources>

@@ -35,5 +35,17 @@ struct Story {
             return choice1Destination
         }
     }
+    
+    func getChoiceText(_ choiceNumber : Int) -> String {
+        if choiceNumber == 1 {
+            return choice1
+        }
+        else if choiceNumber == 2 {
+            return choice2
+        }
+        else {
+            return choice1
+        }
+    }
 }
 
